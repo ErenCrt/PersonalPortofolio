@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PersonalPortfolio/static/css/main.24fe4651.css",
-    "main.js": "/PersonalPortfolio/static/js/main.cef7eebc.js",
+    "main.js": "/PersonalPortfolio/static/js/main.6fe0d79c.js",
     "static/js/787.bbee3217.chunk.js": "/PersonalPortfolio/static/js/787.bbee3217.chunk.js",
     "static/media/back6.png": "/PersonalPortfolio/static/media/back6.7c619e45eca8b0fbc989.png",
     "static/media/unilifefigma.png": "/PersonalPortfolio/static/media/unilifefigma.fb3639aee917c91ba157.png",
@@ -14,10 +14,10 @@
     "static/media/plateplan.png": "/PersonalPortfolio/static/media/plateplan.bcaecd43c4486dacbf52.png",
     "static/media/schmate.png": "/PersonalPortfolio/static/media/schmate.9a8037ca26dc7068c757.png",
     "static/media/github.png": "/PersonalPortfolio/static/media/github.abb5df5cb6033db6a886.png",
+    "static/media/Eren's CV.pdf": "/PersonalPortfolio/static/media/Eren's CV.6251fb4c3935c5eba8ae.pdf",
     "static/media/mypic.jpg": "/PersonalPortfolio/static/media/mypic.427e0028b115a3e0d90c.jpg",
     "static/media/homefrnd.png": "/PersonalPortfolio/static/media/homefrnd.5067dc881c38087582ed.png",
     "static/media/firstever.png": "/PersonalPortfolio/static/media/firstever.a3b9747ef972539a6c5a.png",
-    "static/media/Eren's CV.pdf": "/PersonalPortfolio/static/media/Eren's CV.b74e2fc05a951bf60110.pdf",
     "static/media/unilife.png": "/PersonalPortfolio/static/media/unilife.0d0b2d515d467fd7867f.png",
     "static/media/linkedin.png": "/PersonalPortfolio/static/media/linkedin.e9db41041d38d6fb97b4.png",
     "static/media/photoshop.png": "/PersonalPortfolio/static/media/photoshop.c73d2fab314384b26023.png",
@@ -25,11 +25,11 @@
     "static/media/placeholder.jpg": "/PersonalPortfolio/static/media/placeholder.e83e00e04a871eaf1317.jpg",
     "index.html": "/PersonalPortfolio/index.html",
     "main.24fe4651.css.map": "/PersonalPortfolio/static/css/main.24fe4651.css.map",
-    "main.cef7eebc.js.map": "/PersonalPortfolio/static/js/main.cef7eebc.js.map",
+    "main.6fe0d79c.js.map": "/PersonalPortfolio/static/js/main.6fe0d79c.js.map",
     "787.bbee3217.chunk.js.map": "/PersonalPortfolio/static/js/787.bbee3217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24fe4651.css",
-    "static/js/main.cef7eebc.js"
+    "static/js/main.6fe0d79c.js"
   ]
 }
