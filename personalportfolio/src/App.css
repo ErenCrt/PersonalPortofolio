@@ -1,38 +1,912 @@
-.App {
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.App,.body {
+  background-image: url('back6.png');
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 110vw;
+  
+}
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13%;
+  background: linear-gradient(to top, #faf2f21a, #112D4E);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(5px, 25%));
+  flex-direction: column;
+  z-index: 3; 
+}
+.picandtitle {
+  display: flex; 
+  justify-content: flex; 
+  align-items: center; 
+  gap: 5px; 
+  
+}
+.socials {
+  display: grid;
+  place-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(2px, 24%));
+  flex-direction: column;
+  justify-content: flex-end; 
+  gap: 0.1px; 
+}
+
+.mypicture {
+  position: relative;
+  width: 23%; 
+  height: auto; 
+  border-radius: 55%; 
+  padding: 0%;
+}
+.github, .insta, .linkedin{
+  width: 40%; 
+  height: auto; 
+  
+}
+.title{
+  font-size: 240%;
+  font-weight: bold;
+  color: #F9F7F7; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.texttop{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+.downloadable {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.downloadable a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+  gap: 3px;
+}
+.download{
+  filter: hue-rotate(200deg);
+  filter:invert();
+  width: 8%; 
+  height: auto; 
+}
+.downtext{
+  padding-top: 1%;
+  font-size: 125%;
+  color: #F9F7F7; 
+  font-weight: bold;
+ 
+}
+.aboutpic{
+  padding-top: 7%;
+  padding-left: 1%;
+  display: flex; 
+  justify-content: flex; 
+  align-items: center; 
+  gap: 5px; 
+}
+.mynameis{
+  width: 4%; 
+  height: auto; 
+  padding: 0.1%;
+  filter: drop-shadow(0px 0px 10px #112D4E);
+}
+.aboutmetext{
+  font-size: 205%;
+  font-weight: bold;
+  color: #112D4E; 
+}
+.about{
+  padding-left: 3%;
+  font-size: 180%;
+  font-style: italic;
+  color: #112D4E; 
+}
+
+.work {
+  font-size: 350%;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  color: #112D4E; 
+  font-weight: bold;
+  filter: drop-shadow(0px 2px 3px #112D4E);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.items-grid {
+  padding-top: 3%;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(5%, 40%));
+  flex-direction: column;
+  gap: 5%;
+}
+.box {
+  width: 85%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: start;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.ReactApp{
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top:20%;
+  display: none;
+}
+.box:hover .ReactApp {
+  display: block;
+}
+.schedulemateapp{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top:12%;
+  display: none;
+}
+.box:hover .schedulemateapp {
+  display: block;
+}
+.unilifefigma{
+  position: absolute;
+  width: 58%;
+  height: auto;
+  top:10%;
+  display: none;
+}
+.box:hover .unilifefigma {
+  display: block;
+}
+.homefigma{
+  position: absolute;
+  width: 58%;
+  height: auto;
+  top:10%;
+  display: none;
+}
+.box:hover .homefigma {
+  display: block;
+}
+.box:hover {
+  transform: scale(1.2);  
+}
+
+.box:hover .textbox {
+  display: none;
+}
+.box:hover .textbox1 {
+  display: none;
+}
+.box:hover .textbox2 {
+  display: none;
+}
+.box:hover .plateplanner {
+  display: none;
+}
+.box:hover .homefriend {
+  display: none;
+}
+.box:hover .unilifeease {
+  display: none;
+}
+.box:hover .schedulemate {
+  display: none;
+}
+.box:hover .logomade{
+  display: none;
+}
+.textbox{
+  font-size: 100%;
+  margin-top: 35px;
+  color: #112D4E; 
+  font-weight: bold;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textbox1{
+  font-size: 100%;
+  margin-top: -10px;
+  color: #112D4E; 
+  font-weight: bold;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.textbox2{
+  font-size: 100%;
+  margin-top: 5px;
+  color: #112D4E; 
+  font-weight: bold;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text{
+  position: absolute;
+  padding-top: 21%;
+  align-content: center;
+  width: 65%;
+}
+.plateplanner,.homefriend,.firstweb{
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 2%;
+}
+.unilifeease{
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 10%;
+}
+.schedulemate{
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: -4%;
+}
+.item{
+  width: 500px;
+  height: 380px;
+  background: #e3f4ff3f;
+  border-radius: 30px;
+  border:1px solid Orgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 #112D4E;
+}
+@media (max-width: 1325px) {
+  
+  .App-header{
+    height: 10%;
   }
-  to {
-    transform: rotate(360deg);
+  .title{
+    font-size: 140%;
+  }
+  .downtext{
+    font-size: 90%;
   }
 }
+  @media (max-width: 1245px) {
+    .item{
+      width: 450px;
+      height: 350px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 90%;
+    }
+    .schedulemate{
+      top:1%;
+    }
+  }
+  @media (max-width: 1145px) {
+    .item{
+      width: 450px;
+      height: 330px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 88%;
+    }
+  }
+  @media (max-width: 1095px) {
+    .item{
+      width: 430px;
+      height: 300px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 83%;
+    }
+  }
+  @media (max-width: 1025px) {
+    .item{
+      width: 400px;
+      height: 285px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 78%;
+      
+    }
+  }
+  @media (max-width: 975px) {
+    .items-grid {
+      padding-top: 3%;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+      
+      flex-direction: column;
+      gap: 5.1%;
+    }
+  }
+  @media (max-width: 915px) {
+    .items-grid {
+      padding-top: 5%;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+      
+      flex-direction: column;
+      gap: 5.5%;
+    }
+    .item{
+      width: 350px;
+      height: 235px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 70%;
+    }
+    .textbox{
+      margin-top: 15px;
+    }
+    .about{
+      font-size: 160%;
+    }
+    .work{
+      font-size: 300%;
+    }
+  }
+  @media (max-width: 845px) {
+    .work{
+      font-size: 280%;
+    }
+    .items-grid {
+      padding-top: 2%;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(40%, 0.5fr)); 
+      
+      flex-direction: column;
+      gap: 6%;
+    }
+    .item{
+      width: 310px;
+      height: 230px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 67%;
+    }
+    .textbox{
+      margin-top: 15px;
+    }
+    .App-header{
+      height: 7.5%;
+    }
+    .about{
+      font-size: 135%;
+    }
+    .aboutmetext{
+      padding-top:3%;
+      font-size: 160%;
+    }
+    .mynameis{
+      padding-top:3.5%;
+    }
+    .box {
+      width: 100%;
+    }
+    .App,.body {
+      height: 120vw; 
+    }
+    .unilifefigma,.homefigma,.schedulemateapp{
+      width: 50%;
+    }
+  }
+  @media (max-width: 760px) {
+    .work{
+      font-size: 230%;
+    }
+    .title{
+      font-size: 120%;
+    }
+    .downtext{
+      font-size: 80%;
+    }
+    .items-grid {
+      padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 400px;
+      height: 250px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 80%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 120%;
+    }
+    .aboutmetext{
+      font-size: 150%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 200vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+      top:10%;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top: 15%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top: 5%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+    .unilifefigma,.homefigma{
+    width: 40%;
+    }
+    
+  }
+  @media (max-width: 655px) {
+    .work{
+      font-size: 210%;
+    }
+    .title{
+      font-size: 100%;
+    }
+    .downtext{
+      font-size: 70%;
+    }
+    .items-grid {
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 400px;
+      height: 250px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 80%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 100%;
+    }
+    .aboutmetext{
+      font-size: 150%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 230vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top:15%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top:10%;
+    }
+    .homefriend{
+      top:10%;
+    }
+    .plateplanner{
+      top:10%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+    .unilifefigma,.homefigma{
+      width: 40%;
+    }
+    .schedulemateapp{
+      width: 60%;
+    }
+  }
+  @media (max-width: 585px) {
+    .work{
+      font-size: 200%;
+    }
+    .title{
+      font-size: 90%;
+    }
+    .downtext{
+      font-size: 55%;
+    }
+    .items-grid {
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 400px;
+      height: 250px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 80%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 90%;
+    }
+    .aboutmetext{
+      padding-top:3%;
+      font-size: 120%;
+    }
+    .mynameis{
+      padding-top:4%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 270vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top:15%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top:10%;
+    }
+    .homefriend{
+      top:10%;
+    }
+    .plateplanner{
+      top:10%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+    .unilifefigma,.homefigma{
+      width: 50%;
+    }
+    .schedulemateapp{
+      width: 65%;
+    }
+  }
+  @media (max-width: 475px) {
+    .work{
+      font-size: 200%;
+    }
+    .title{
+      font-size: 80%;
+    }
+    .downtext{
+      font-size: 50%;
+    }
+    .items-grid {
+    padding-top: 6%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 350px;
+      height: 250px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 75%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 85%;
+    }
+    .aboutmetext{
+      padding-top:3%;
+      font-size: 120%;
+    }
+    .mynameis{
+      padding-top:4%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 300vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top:15%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top:10%;
+    }
+    .homefriend{
+      top:10%;
+    }
+    .plateplanner{
+      top:10%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+    .unilifefigma,.homefigma{
+      width: 60%;
+    }
+    .schedulemateapp{
+      width: 75%;
+    }
+  }
+  @media (max-width: 425px) {
+    .work{
+      font-size: 190%;
+    }
+    .title{
+      font-size: 68%;
+    }
+    .downtext{
+      font-size: 45%;
+    }
+    .items-grid {
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 310px;
+      height: 250px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 72%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 70%;
+    }
+    .aboutmetext{
+      padding-top:3%;
+      font-size: 120%;
+    }
+    .mynameis{
+      padding-top:4%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 400vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top:12%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top:7%;
+    }
+    .homefriend{
+      top:10%;
+    }
+    .plateplanner{
+      top:10%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+  }
+  @media (max-width: 330px) {
+    .work{
+      font-size: 170%;
+    }
+    .title{
+      font-size: 60%;
+    }
+    .downtext{
+      font-size: 38%;
+    }
+    .items-grid {
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    }
+    .item{
+      flex: 1; 
+      width: 310px;
+      height: 260px;
+      margin: 15px;
+    }
+    .textbox, .textbox1, .textbox2{
+      font-size: 72%;
+    }
+    .textbox{
+      margin-top: 11.5px;
+    }
+    .App-header{
+      height: 6.5%;
+    }
+    .about{
+      font-size: 60%;
+    }
+    .aboutmetext{
+      padding-top:3%;
+      font-size: 100%;
+    }
+    .mynameis{
+      padding-top:4%;
+    }
+    .box {
+      width: 80%;
+    }
+    .App,.body {
+      height: 430vw; 
+    }
+    .plateplanner,.homefriend{
+      width: 20%;
+      height: auto;
+    }
+    .unilifeease{
+      width: 30%;
+      height: auto;
+      top:12%;
+    }
+    .schedulemate{
+      width: 20%;
+      height: auto;
+      top:7%;
+    }
+    .homefriend{
+      top:10%;
+    }
+    .plateplanner{
+      top:10%;
+    }
+    .insta, .linkedin{
+      width: 70%;
+    }
+    .unilifefigma,.homefigma{
+      width: 80%;
+    }
+    .schedulemateapp{
+      width: 90%;
+    }
+  }
+  
+  
