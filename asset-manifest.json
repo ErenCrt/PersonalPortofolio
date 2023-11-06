@@ -1,16 +1,35 @@
 {
   "files": {
-    "main.css": "/PersonalPortfolio/static/css/main.f855e6bc.css",
-    "main.js": "/PersonalPortfolio/static/js/main.550e2ef1.js",
+    "main.css": "/PersonalPortfolio/static/css/main.24fe4651.css",
+    "main.js": "/PersonalPortfolio/static/js/main.cef7eebc.js",
     "static/js/787.bbee3217.chunk.js": "/PersonalPortfolio/static/js/787.bbee3217.chunk.js",
-    "static/media/logo.svg": "/PersonalPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/back6.png": "/PersonalPortfolio/static/media/back6.7c619e45eca8b0fbc989.png",
+    "static/media/unilifefigma.png": "/PersonalPortfolio/static/media/unilifefigma.fb3639aee917c91ba157.png",
+    "static/media/back2.png": "/PersonalPortfolio/static/media/back2.db3c32d295fd42e778a3.png",
+    "static/media/homefigma.png": "/PersonalPortfolio/static/media/homefigma.eeffd42d18a64a0cbc2c.png",
+    "static/media/ReactApp.png": "/PersonalPortfolio/static/media/ReactApp.260551a973455c364e5a.png",
+    "static/media/mypic2.png": "/PersonalPortfolio/static/media/mypic2.13a8ebc0583101eb6712.png",
+    "static/media/schedulemateapp.png": "/PersonalPortfolio/static/media/schedulemateapp.d81acd8fbe8decbfe73d.png",
+    "static/media/hellomynameis.png": "/PersonalPortfolio/static/media/hellomynameis.c028bbc3677eec35778c.png",
+    "static/media/plateplan.png": "/PersonalPortfolio/static/media/plateplan.bcaecd43c4486dacbf52.png",
+    "static/media/schmate.png": "/PersonalPortfolio/static/media/schmate.9a8037ca26dc7068c757.png",
+    "static/media/github.png": "/PersonalPortfolio/static/media/github.abb5df5cb6033db6a886.png",
+    "static/media/mypic.jpg": "/PersonalPortfolio/static/media/mypic.427e0028b115a3e0d90c.jpg",
+    "static/media/homefrnd.png": "/PersonalPortfolio/static/media/homefrnd.5067dc881c38087582ed.png",
+    "static/media/firstever.png": "/PersonalPortfolio/static/media/firstever.a3b9747ef972539a6c5a.png",
+    "static/media/Eren's CV.pdf": "/PersonalPortfolio/static/media/Eren's CV.b74e2fc05a951bf60110.pdf",
+    "static/media/unilife.png": "/PersonalPortfolio/static/media/unilife.0d0b2d515d467fd7867f.png",
+    "static/media/linkedin.png": "/PersonalPortfolio/static/media/linkedin.e9db41041d38d6fb97b4.png",
+    "static/media/photoshop.png": "/PersonalPortfolio/static/media/photoshop.c73d2fab314384b26023.png",
+    "static/media/download.png": "/PersonalPortfolio/static/media/download.1f6ea9dc4b834c3fae8d.png",
+    "static/media/placeholder.jpg": "/PersonalPortfolio/static/media/placeholder.e83e00e04a871eaf1317.jpg",
     "index.html": "/PersonalPortfolio/index.html",
-    "main.f855e6bc.css.map": "/PersonalPortfolio/static/css/main.f855e6bc.css.map",
-    "main.550e2ef1.js.map": "/PersonalPortfolio/static/js/main.550e2ef1.js.map",
+    "main.24fe4651.css.map": "/PersonalPortfolio/static/css/main.24fe4651.css.map",
+    "main.cef7eebc.js.map": "/PersonalPortfolio/static/js/main.cef7eebc.js.map",
     "787.bbee3217.chunk.js.map": "/PersonalPortfolio/static/js/787.bbee3217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.550e2ef1.js"
+    "static/css/main.24fe4651.css",
+    "static/js/main.cef7eebc.js"
   ]
 }
