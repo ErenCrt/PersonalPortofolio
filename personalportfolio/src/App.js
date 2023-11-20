@@ -83,8 +83,6 @@ function App() {
         and providing a convenient takeaway finder
         with the scope of saving time, money and food waste.
       </p>
-      
-      
         
         </div>
         
@@ -153,6 +151,7 @@ function App() {
         
         </div>      
       </div>
+      <div className="last">This website is subject to frequent updates, which may result in changes to its appearance and content. Thank you :) </div>
     </div>
   );
 }

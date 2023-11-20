@@ -116,7 +116,13 @@ body, html {
   font-style: italic;
   color: #112D4E; 
 }
-
+.last{
+  padding-top: 10%;
+  text-align: center;
+  font-size: 50%;
+  font-style: italic;
+  color: #F9F7F7; 
+}
 .work {
   font-size: 350%;
   text-align: center;
@@ -804,7 +810,7 @@ span:nth-child(7) {
       width: 80%;
     }
     .App,.body {
-      height: 400vw; 
+      height: 420vw; 
     }
     .plateplanner,.homefriend{
       width: 20%;
@@ -854,7 +860,7 @@ span:nth-child(7) {
       margin: 15px;
     }
     .textbox, .textbox1, .textbox2{
-      font-size: 72%;
+      font-size: 70%;
     }
     .textbox{
       margin-top: 11.5px;
